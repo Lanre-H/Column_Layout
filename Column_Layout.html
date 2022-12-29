@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;}
+    *{box-sizing: border-box}
+    .column {
+        float: left;
+        width: 33.33%;
+        font-size: small;
+        padding: 30px;
+        height: 320px;}
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;}
+    .button {
+        border: 1.5px solid white;
+        color: white;
+        padding: 5px 10px;
+        text-align: center;
+        font-size: x-small;
+        background-color: transparent;
+        cursor: pointer;
+        margin: 50px 2px;
+        transition-duration: 0.4s;
+        display: inline-block;
+        border-radius: 15px;
+    }
+    .button:hover {
+        background-color: burlywood;
+    }
+    .center {
+        margin: 10% 10%;
+    }
+    @media only screen and (max-width: 620px) {.column {width: 100%;}}
+</style>
+</head>
+<body>
+    <div class="center">
+    <div class="row">
+        <div class="column" style="background-color:rgb(224, 119, 34); color: white;">
+            <img src="icon-sedans.svg" alt="">
+            <h2>SEDANS</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam esse, natus hic reprehenderit exercitationem tempore architecto qui, id explicabo dolor animi. Reprehenderit nobis rem nesciunt vitae officiis quia deleniti odit.</p>
+            <button class="button">Learn More</button>
+        </div>
+        <div class="column" style="background-color:rgb(21, 93, 123); color: white;">
+            <img src="icon-suvs.svg" alt="">
+            <h2>SUVS</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam esse, natus hic reprehenderit exercitationem tempore architecto qui, id explicabo dolor animi. Reprehenderit nobis rem nesciunt vitae officiis quia deleniti odit.</p>
+            <button class="button">Learn More</button>
+        </div>
+        <div class="column" style="background-color:rgb(33, 22, 6); color: white;">
+            <img src="icon-luxury.svg" alt="">
+            <h2>LUXURY</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam esse, natus hic reprehenderit exercitationem tempore architecto qui, id explicabo dolor animi. Reprehenderit nobis rem nesciunt vitae officiis quia deleniti odit.</p> 
+            <button class="button">Learn More</button>
+        </div>
+
+    </div>
+    </div>
+</body>
+</html>
